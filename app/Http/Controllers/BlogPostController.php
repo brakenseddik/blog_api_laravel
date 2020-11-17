@@ -81,11 +81,13 @@ $blog->user_id=0;
      * Show the form for editing the specified resource.
      *
      * @param  \App\Models\BlogPost  $blogPost
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
-    public function edit(BlogPost $blogPost)
+    public function edit($id)
     {
-        //
+        $blogs=BlogPost::find($id);
+        $categories=Category::all();
+        return view('blog.edit-post',compact('blogs','categories'));
     }
 
     /**
@@ -93,21 +95,48 @@ $blog->user_id=0;
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\BlogPost  $blogPost
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function update(Request $request, BlogPost $blogPost)
+    public function update(Request $request,$id)
     {
-        //
+        $blog= BlogPost::find($id);
+        $blog->title=$request->input('blogPost');
+        $blog->details=$request->input('blogDetails');
+        $blog->category_id=$request->input('category');
+        $blog->user_id=0;
+        if($blog->save()){
+            $photo=$request->file('featuredPhoto');
+            if ($photo!=null){
+                $ext=$photo->getClientOriginalExtension();
+                $fileName=rand(10000,5000).".".$ext;
+                if ($ext=='jpg' ||$ext=='png' ||$ext=='jpeg'){
+                    if($photo->move(public_path(),$fileName)){
+                        $blog=BlogPost::find($blog->id);
+                        $blog->featured_image_url=url('/').'/'.$fileName;
+                        $blog->save();
+                    }
+
+                }
+            }
+            return redirect()->back()->with('success','Category added successfully');
+        }
+        else{
+            return redirect()->back()->with('failed','Failed to insert a new category');
+        }
+
     }
 
     /**
      * Remove the specified resource from storage.
      *
      * @param  \App\Models\BlogPost  $blogPost
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function destroy(BlogPost $blogPost)
+    public function destroy($id)
     {
-        //
+        if (BlogPost::destroy($id)) {
+            return redirect()->back()->with('delete','Blog post deleted successfully');
+        }
+        return redirect()->back()->with('failed','failed to delete post');
     }
 }

@@ -17,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+//Categories routes
+Route::get('get-categories','Api\CategoryController@index');
+
+//Categories routes
+Route::get('get-posts','Api\BlogPostController@index');

@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('dashboard','DashboardController@index');
+Route::get('/','DashboardController@index');
 Route::get('create-category','BlogPostController@index');
 
 
@@ -29,6 +29,11 @@ Route::get('delete-category/{id}','CategoryController@destroy');
 Route::get('get-blog-post-form','BlogPostController@create');
 Route::post('store-blog-post','BlogPostController@store');
 Route::get('all-blogs','BlogPostController@index');
+Route::get('edit-post/{id}','BlogPostController@edit');
+Route::post('update-post/{id}','BlogPostController@update');
+Route::get('delete-post/{id}','BlogPostController@destroy');
+
+
 
 
 

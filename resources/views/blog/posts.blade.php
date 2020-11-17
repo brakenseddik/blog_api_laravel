@@ -56,8 +56,8 @@
                     @foreach($blogs as $post)
                         <tr>
                             <td>{{$post->title}}</td>
-                            <td>{{$post->details}}</td>
-                            <td><img height="100" width="200" src="{{$post->featured_image_url}}"></td>
+                            <td>{{ Illuminate\Support\Str::limit($post->details, 20) }}</td>
+                            <td><img height="80" width="150" src="{{$post->featured_image_url}}"></td>
                         <td>{{$post->created_at}}</td>
                         <td>{{$post->updated_at}}</td>
                         <td>
@@ -77,7 +77,7 @@
 
 <script>
     function checkDelete(){
-       var check= confirm('Are you sure !?');
+       var check= confirm('Do you want to delete this post !?');
        if(check){return true;}
        else return false;
     }
