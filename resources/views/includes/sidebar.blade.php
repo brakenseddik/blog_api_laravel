@@ -31,7 +31,7 @@
         </a>
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="{{\Illuminate\Support\Facades\URL::to('post-category')}}">create category</a>
+                <a class="collapse-item" href="{{\Illuminate\Support\Facades\URL::to('create-category')}}">create category</a>
                 <a class="collapse-item" href="{{\Illuminate\Support\Facades\URL::to('all-categories')}}">all categories</a>
             </div>
         </div>

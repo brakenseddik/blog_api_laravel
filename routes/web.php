@@ -15,9 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/','DashboardController@index');
-Route::get('create-category','BlogPostController@index');
 
-
+Route::get('create-category', 'CategoryController@create');
 Route::post('post-category','CategoryController@store');
 Route::get('all-categories','CategoryController@index');
 Route::get('edit-category/{id}','CategoryController@edit');

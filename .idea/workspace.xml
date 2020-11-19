@@ -20,15 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e7dae65-0764-472b-8bbc-e36c50faa1d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/edit-post.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/BlogPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/BlogPostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogPostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/blog/posts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/posts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/category/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -162,14 +158,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\blog_api\public" />
+      <recent name="C:\xampp\htdocs\blog_api\app\Models" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\blog_api\resources\views\blog" />
       <recent name="C:\xampp\htdocs\blog_api\resources\views\category" />
       <recent name="C:\xampp\htdocs\blog_api\resources\views" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\blog_api\public" />
-      <recent name="C:\xampp\htdocs\blog_api\app\Models" />
     </key>
   </component>
   <component name="RunManager">
@@ -207,6 +203,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1605608228967">
@@ -229,10 +226,14 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="175" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1605293682187" />
-    <state x="517" y="288" key="NewPhpFileDialog" timestamp="1605443131008">
+    <state x="517" y="288" key="NewPhpFileDialog" timestamp="1605727240845">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="517" y="288" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1605443131008" />
+    <state x="517" y="288" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1605727240845" />
+    <state x="530" y="6" key="RollbackChangesDialog" timestamp="1605726698018">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="530" y="6" key="RollbackChangesDialog/0.0.1366.738@0.0.1366.738" timestamp="1605726698018" />
     <state x="184" y="14" key="SettingsEditor" timestamp="1605357304126">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

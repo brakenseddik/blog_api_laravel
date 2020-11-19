@@ -57,6 +57,7 @@
                         <tr>
                             <td>{{$post->title}}</td>
                             <td>{{ Illuminate\Support\Str::limit($post->details, 20) }}</td>
+
                             <td><img height="80" width="150" src="{{$post->featured_image_url}}"></td>
                         <td>{{$post->created_at}}</td>
                         <td>{{$post->updated_at}}</td>

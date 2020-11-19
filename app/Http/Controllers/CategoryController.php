@@ -25,11 +25,11 @@ class CategoryController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|Response|\Illuminate\View\View
      */
     public function create()
     {
-        //
+        return view('category.create');
     }
 
     /**
@@ -41,7 +41,7 @@ class CategoryController extends Controller
     public function store(Request $request)
     {
         $category=new Category();
-        $category->name=$request->input('BlogTitle');
+        $category->name=$request->input('categoryName');
         if($category->save()){
             return redirect()->back()->with('success','Category added successfully');
         }
