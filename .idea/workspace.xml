@@ -20,10 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e7dae65-0764-472b-8bbc-e36c50faa1d9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/actes/actes.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/actes/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/actes/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/hospital/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/hospital/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/hospital/hospitals.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/medicament/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/medicament/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/medicament/medicaments.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/blog_api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog_api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/posts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/posts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/category/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -65,7 +76,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
       <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
-      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/routing" />
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
@@ -133,13 +143,13 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
       <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
       <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
-      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
       <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
       <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
       <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php81" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kF29NTpV5HOoaQeBwVO31TOdan" />
@@ -150,22 +160,25 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.env" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/blog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\blog_api\public" />
-      <recent name="C:\xampp\htdocs\blog_api\app\Models" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\blog_api_laravel\resources\views" />
       <recent name="C:\xampp\htdocs\blog_api\resources\views\blog" />
       <recent name="C:\xampp\htdocs\blog_api\resources\views\category" />
       <recent name="C:\xampp\htdocs\blog_api\resources\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\blog_api_laravel\app\Models" />
+      <recent name="C:\xampp\htdocs\blog_api\public" />
+      <recent name="C:\xampp\htdocs\blog_api\app\Models" />
     </key>
   </component>
   <component name="RunManager">
@@ -187,6 +200,9 @@
       <workItem from="1605436825473" duration="13420000" />
       <workItem from="1605515912662" duration="12330000" />
       <workItem from="1605606480415" duration="9796000" />
+      <workItem from="1640431825865" duration="8018000" />
+      <workItem from="1640513188142" duration="5485000" />
+      <workItem from="1640602076528" duration="476000" />
     </task>
     <servers />
   </component>
@@ -204,43 +220,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1605608228967">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1605608228967" />
-    <state width="1323" height="175" key="GridCell.Tab.0.bottom" timestamp="1605293682187">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1605293682187" />
-    <state width="1323" height="175" key="GridCell.Tab.0.center" timestamp="1605293682187">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1605293682187" />
-    <state width="1323" height="175" key="GridCell.Tab.0.left" timestamp="1605293682179">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1605293682179" />
-    <state width="1323" height="175" key="GridCell.Tab.0.right" timestamp="1605293682187">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1605293682187" />
-    <state x="517" y="288" key="NewPhpFileDialog" timestamp="1605727240845">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="517" y="288" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1605727240845" />
-    <state x="530" y="6" key="RollbackChangesDialog" timestamp="1605726698018">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="530" y="6" key="RollbackChangesDialog/0.0.1366.738@0.0.1366.738" timestamp="1605726698018" />
-    <state x="184" y="14" key="SettingsEditor" timestamp="1605357304126">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="184" y="14" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1605357304126" />
-    <state x="339" y="165" key="run.anything.popup" timestamp="1605456558265">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1605456558265" />
   </component>
 </project>

@@ -24,26 +24,55 @@
 
 
     <!-- Nav Item - Pages Collapse Menu -->
+
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
             <i class="fas fa-fw fa-folder"></i>
-            <span>Categories</span>
+            <span>Hopitaux</span>
         </a>
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="{{\Illuminate\Support\Facades\URL::to('create-category')}}">create category</a>
-                <a class="collapse-item" href="{{\Illuminate\Support\Facades\URL::to('all-categories')}}">all categories</a>
+                <a class="collapse-item" href="{{\Illuminate\Support\Facades\URL::to('create-hospital')}}">create hopital</a>
+                <a class="collapse-item" href="{{\Illuminate\Support\Facades\URL::to('all-hospitals')}}">all hopitaux</a>
             </div>
         </div>
-    </li>  <li class="nav-item">
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePage" aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Actes Médicaux</span>
+        </a>
+        <div id="collapsePage" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="{{\Illuminate\Support\Facades\URL::to('create-acte')}}">create Acte médicale</a>
+                <a class="collapse-item" href="{{\Illuminate\Support\Facades\URL::to('all-actes')}}">all Acte médicale</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse" aria-expanded="true" aria-controls="collapse">
             <i class="fas fa-fw fa-blog"></i>
-            <span>Blog Posts</span>
+            <span>Medicaments</span>
         </a>
         <div id="collapse" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="{{\Illuminate\Support\Facades\URL::to('get-blog-post-form')}}">create blog</a>
-                <a class="collapse-item" href="{{\Illuminate\Support\Facades\URL::to('all-blogs')}}">all blogs</a>
+                <a class="collapse-item" href="{{\Illuminate\Support\Facades\URL::to('create-medicament')}}">create medicaments</a>
+                <a class="collapse-item" href="{{\Illuminate\Support\Facades\URL::to('all-medicaments')}}">all médicaments</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collaps" aria-expanded="true" aria-controls="collapse">
+            <i class="fas fa-fw fa-blog"></i>
+            <span>Organismes Assureur</span>
+        </a>
+        <div id="collaps" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="{{\Illuminate\Support\Facades\URL::to('create-assurance')}}">create organisme</a>
+                <a class="collapse-item" href="{{\Illuminate\Support\Facades\URL::to('all-assurance')}}">all organismes</a>
             </div>
         </div>
     </li>

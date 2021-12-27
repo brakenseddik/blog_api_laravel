@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/','DashboardController@index');
+// Categories
 
 Route::get('create-category', 'CategoryController@create');
 Route::post('post-category','CategoryController@store');
@@ -23,14 +24,44 @@ Route::get('edit-category/{id}','CategoryController@edit');
 Route::post('update-category/{id}','CategoryController@update');
 Route::get('delete-category/{id}','CategoryController@destroy');
 
-//posts
+// Organisme assureur
 
-Route::get('get-blog-post-form','BlogPostController@create');
-Route::post('store-blog-post','BlogPostController@store');
-Route::get('all-blogs','BlogPostController@index');
-Route::get('edit-post/{id}','BlogPostController@edit');
-Route::post('update-post/{id}','BlogPostController@update');
-Route::get('delete-post/{id}','BlogPostController@destroy');
+Route::get('create-assurance', 'AssuranceController@create');
+Route::post('post-assurance','AssuranceController@store');
+Route::get('all-assurance','AssuranceController@index');
+Route::get('edit-assurance/{id}','AssuranceController@edit');
+Route::post('update-assurance/{id}','AssuranceController@update');
+Route::get('delete-assurance/{id}','AssuranceController@destroy');
+
+// Actes Médicaux
+
+Route::get('create-acte', 'ActMedicalController@create');
+Route::post('post-acte','ActMedicalController@store');
+Route::get('all-actes','ActMedicalController@index');
+Route::get('edit-acte/{id}','ActMedicalController@edit');
+Route::post('update-acte/{id}','ActMedicalController@update');
+Route::get('delete-acte/{id}','ActMedicalController@destroy');
+
+
+// Médiiaments
+
+Route::get('create-medicament', 'MedicamentController@create');
+Route::post('post-medicament','MedicamentController@store');
+Route::get('all-medicaments','MedicamentController@index');
+Route::get('edit-medicament/{id}','MedicamentController@edit');
+Route::post('update-medicament/{id}','MedicamentController@update');
+Route::get('delete-medicament/{id}','MedicamentController@destroy');
+
+// Hospitals
+
+Route::get('create-hospital', 'HospitalController@create');
+Route::post('post-hospital','HospitalController@store');
+Route::get('all-hospitals','HospitalController@index');
+Route::get('edit-hospital/{id}','HospitalController@edit');
+Route::post('update-hospital/{id}','HospitalController@update');
+Route::get('delete-hospital/{id}','HospitalController@destroy');
+
+
 
 
 
