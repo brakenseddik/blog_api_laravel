@@ -19,6 +19,7 @@ class CreateHospitalsTable extends Migration
             $table->String('address');
             $table->string('email')->unique();
             $table->String('password');
+            $table->boolean('is_admin')->default(0);
             $table->timestamps();
         });
     }
